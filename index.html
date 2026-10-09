@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Calculator -->
+  <main class="calculator" id="calculator">
+    <h2>Calculator</h2>
+
+    <input
+      type="text"
+      id="display"
+      class="display"
+      placeholder="0"
+      readonly
+      aria-label="Calculator display"
+    >
+
+    <div class="buttons">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="delete">DEL</button>
+      <button data-value="/">÷</button>
+      <button data-value="*">×</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="-">−</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="+">+</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="equals" data-action="equals">=</button>
+
+      <button class="zero" data-value="0">0</button>
+      <button data-value=".">.</button>
+    </div>
+  </main>
+
+  <!-- Surprise Gallery -->
+  <section id="gallery" class="gallery" hidden>
+
+    <div class="gallery-heading">
+      <h1>For You ❤️</h1>
+      <p>A little surprise for someone special</p>
+      <button id="musicButton" type="button">♫ Play Music</button>
+    </div>
+
+    <!-- Floating hearts and flowers -->
+    <div class="decorations" aria-hidden="true">
+      <span>💗</span>
+      <span>🌸</span>
+      <span>💕</span>
+      <span>🌷</span>
+      <span>💖</span>
+      <span>🌼</span>
+      <span>💞</span>
+      <span>🌺</span>
+      <span>❤️</span>
+      <span>🌹</span>
+      <span>💘</span>
+      <span>🌸</span>
+      <span>💓</span>
+      <span>🌷</span>
+    </div>
+
+    <div class="gallery-layout">
+
+      <!-- LEFT TEXT -->
+      <aside class="side-text left-text">
+        <p>Iloveyouuusoomuch</p>
+        <p>Te amo mucho</p>
+        <p>Aku sangat mencintaimu</p>
+        <p>あなたをとても愛しています</p>
+        <p>Ti amo tanto</p>
+      </aside>
+
+      <!-- CENTER PHOTOS -->
+      <div class="photo-window">
+        <div class="photo-track" id="photoTrack">
+          <img src="images/photo1.jpg" alt="Photo 1">
+          <img src="images/photo2.jpg" alt="Photo 2">
+          <img src="images/photo3.jpg" alt="Photo 3">
+          <img src="images/photo4.jpg" alt="Photo 4">
+          <img src="images/photo5.jpg" alt="Photo 5">
+          <img src="images/photo6.jpg" alt="Photo 6">
+        </div>
+      </div>
+
+      <!-- RIGHT TEXT -->
+      <aside class="side-text right-text">
+        <p>Mahal na mahal kita/p>
+        <p>Hello, my love!</p>
+        <p>Hello, my wife!</p>
+        <p>Hello, my baby!</p>
+        <p>Hello, my honey!</p>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Music file must be beside index.html -->
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="mahal-magmahal.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
